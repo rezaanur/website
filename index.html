@@ -1,56 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Login Page</title>
+
     <!-- Bootstrap CSS -->
-    <link href="bootstrapp/css/bootstrap.css" rel="stylesheet" />
-    <link rel="stylesheet" href="bootstrapp/js/popper.min.js" />
+    <link rel="stylesheet" href="bootstrapp/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrapp/js/popper.min.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
-    <body>
-      <!-- login  -->
-      <section id="login">
-        <div class="auth">
-          <div class="container">
-            <div class="row d-flex justify-content-center">
-              <div class="col-md-7 col-lg-5">
-                <div class="card">
-                  <div class="card-body shadow-lg p-4 bg-body rounded">
-                    <h1 class="m-4 text-center">SIGN IN</h1>
-                    <form>
-                      <div class="mb-3 form-check">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                      </div>
-                      <div class="mb-3 form-check">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" />
-                      </div>
-                      <div class="row">
-                        <div class="col-6 text-start">
-                          <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="remember" />
-                            <label class="form-check-label ml-2" for="remember">Remember</label>
-                          </div>
-                        </div>
-                        <div class="col-6 text-end">
-                          <a href="forgot.html" class="text-decoration-none">Forgot Your Password?</a>
-                        </div>
-                      </div>
-                      <div class="d-grid gap-2">
-                        <button type="submit" class="btn btn-primary">Sign in</button>
-                      </div>
-                      <p class="mt-4 text-muted">New Member?<a href="register.html" class="text-decoration-none">Create Account</a></p>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <title>Portfolio Reza Nur</title>
+  </head>
+  <body id="home">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary shadow p-3 fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Reza Nur</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Personal Data</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pencapaian">Achievement</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Jumbotron -->
+    <section class="jumbotron">
+      <br />
+      <br />
+      <br />
+      <img src="img/6.jpg" width="200px" class="rounded-circle border border-3 border border-secondary" />
+      <h1 class="fw-bold">Reza Nur</h1>
+      <p class="fs-6">Students | Beban Ortu</p>
+    </section>
+    <!-- Akhir Jumbotron -->
+
+    <!-- Personal Data -->
+    <section class="pencapaian">
+      <center>
+        <h1>Bio Data</h1>
+        <hr width="80%" />
+      </center>
+      <br />
+      <br />
+      <div class="row justify-content-center">
+        <div class="col-2">Nama</div>
+        <div class="col-1">:</div>
+        <div class="col-8">Reza Nur Diyanto</div>
+      </div>
+      <br />
+      <div class="row justify-content-center">
+        <div class="col-2">Alamat</div>
+        <div class="col-1">:</div>
+        <div class="col-8">Jl. Tupai Gg. Cermai No. 144 Kec. Kedaton Kel. Sidodadi Bandar Lampung</div>
+      </div>
+      <br />
+      <div class="row justify-content-center">
+        <div class="col-2">Jenis Kelamin</div>
+        <div class="col-1">:</div>
+        <div class="col-8">Laki-Laki</div>
+      </div>
+      <br />
+      <div class="row justify-content-center">
+        <div class="col-2">Kewarganegaraan</div>
+        <div class="col-1">:</div>
+        <div class="col-8">Indonesia</div>
+      </div>
+      <br />
+      <div class="row justify-content-center">
+        <div class="col-2">Agama</div>
+        <div class="col-1">:</div>
+        <div class="col-8">Islam</div>
+      </div>
+      <br />
+      <div class="row justify-content-center">
+        <div class="col-2">Email</div>
+        <div class="col-1">:</div>
+        <div class="col-8">rezanur2610@gmail.com</div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#ffffff" fill-opacity="1" d="M0,160L120,144C240,128,480,96,720,101.3C960,107,1200,149,1320,170.7L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+      </svg>
+    </section>
+    <!-- Akhir Personal Data -->
+
+    <!-- Pencapaian -->
+        <section id="pencapaian" style="background-color: rgb(123, 129, 129)">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h1>Achievement</h1>
+            <hr />
           </div>
         </div>
-      </section>
-      <!-- end login -->
-    </body>
-  </head>
+        <div class="row mb-4">
+          <div class="col-md">
+            <div class="card">
+                  <img src="pencapaian/10.jpg" class="card-img-top" alt="card">
+                  <div class="card-body">
+                    <p class="card-text">Ikut Berperan Serta dalam Lomba Teknokrat Computer Competition 2020 </p>
+                  </div>
+                </div>
+          </div>
+          <div class="col-md">
+            <div class="card">
+                  <img src="pencapaian/12.jpg" class="card-img-top" alt="card">
+                  <div class="card-body">
+                    <p class="card-text">Ikut Berperan Serta Dalam Lomba Olimpiade Jaringan Mikrotik - APJII 2019 Tingkat Nasional</p>
+                  </div>
+                </div>
+          </div>
+      </div>
+    </section>
+    <!-- akhir Pencapaian -->
+    <!--Contact-->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h2>Contact</h2>
+            <hr />
+          </div>
+        </div>
+
+        <!-- Form contact -->
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3">
+            <form>
+              <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" class="form-control" placeholder="Masukkan Nama" />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="Masukkan Email" />
+              </div>
+
+              <div class="form-group">
+                <label for="telp">No. Telephone</label>
+                <input type="tel" id="telp" class="form-control" placeholder="Masukkan No Telephone" />
+              </div>
+
+              <div class="form-group">
+                <label for="pesan">Pesan</label>
+                <textarea class="form-control" rows="8" id="pesan" placeholder="Masukkan pesan"></textarea>
+              </div>
+
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Akhir Contact-->
+    <!--Footer-->
+    <footer>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-sm-12">
+            <p>&copy; copyright 2021 | <a href="https://web.facebook.com/reza.nur.7965">Facebook</a>&nbsp;|&nbsp;<a href="https://www.instagram.com/rzaanur_/">Instagram</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Akhir Footer-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  </body>
 </html>
